@@ -8,4 +8,5 @@ fn main() {
 // 3. Make a function to remove items from inventory
 // 4. Make a function to list all items in inventory
 // 5. this is just a commit test
+// 6. test number 2
 }
