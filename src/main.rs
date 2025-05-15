@@ -23,6 +23,11 @@ fn main() {
 
 // Print the contents of 'inventory' vector again to show 'Sword' is no longer there.
     show_inventory(&inventory);
+
+// Clears the inventory, then shows it again to demonstrate that the vector has been emptied.
+    clear_inventory(&mut inventory);
+
+    show_inventory(&inventory);
 }
 
 // add_item fn. it adds items to the inventory vector.
@@ -46,6 +51,10 @@ fn remove_item(inventory: &mut Vec<String>, item: String) {
         println!("Item {} not found.", item);
     }
         
+}
+
+fn clear_inventory(inventory: &mut Vec<String>) {
+    inventory.clear();
 }
 
 // show_inventory fn, just prints the contents of the 'inventory' vector, uses below 'print_item' fn.
