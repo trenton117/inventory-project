@@ -55,6 +55,7 @@ fn remove_item(inventory: &mut Vec<String>, item: String) {
 
 fn clear_inventory(inventory: &mut Vec<String>) {
     inventory.clear();
+    println!("Inventory has been cleared.");
 }
 
 // show_inventory fn, just prints the contents of the 'inventory' vector, uses below 'print_item' fn.
